@@ -1,0 +1,45 @@
+theme-input {
+  .c-input-group {
+    width: 100%;
+  }
+
+  input[type='color'] {
+    height: 100%;
+    width: 2.5em;
+    padding: 0em;
+  }
+
+  .c-icon {
+    cursor: pointer;
+  }
+
+  .c-color-picker__input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* removes default styling from input color element */
+    padding: 0;
+    border: none;
+    /* makes input (color swatch) 100% size of container */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* mix blend mode makes the color of the swatch alter the image behind it. */
+    mix-blend-mode: hue; /* try screen, multiply or other blend modes for different effects */
+    cursor: pointer;
+  }
+
+  /* removes default styling from input color element */
+  ::-webkit-color-swatch {
+    border: none;
+  }
+
+  ::-webkit-color-swatch-wrapper {
+    padding: 0;
+  }
+
+  ::-moz-color-swatch,
+  ::-moz-focus-inner {
+    border: none;
+  }
+}

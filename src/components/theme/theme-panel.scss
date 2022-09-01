@@ -1,0 +1,36 @@
+theme-panel {
+  --color-text: #2c3e50;
+  --card-background: #fafafa;
+
+  --card-control-color: white;
+  --card-control-background: linear-gradient(135deg, #1e90ff, #f0f, white);
+
+  --card-item-color: var(--color-text);
+  --card-item-background: transparent;
+
+  --card-item-color--divider: var(--color-text);
+  --card-item-background--divider: #eaeaea;
+
+  --typography-code-color: var(--color-text);
+  --typography-code-background: #eaeaea;
+
+  --field-color: var(--color-text);
+
+  --color-outline: #4267ff;
+
+  --border-radius: 4px;
+
+  --button-color--brand-ghost: #2c3e50;
+
+  display: block;
+  color: var(--color-text);
+
+  .c-overlay[aria-hidden] {
+    display: none;
+  }
+
+  aside.o-drawer {
+    position: fixed;
+    text-align: left;
+  }
+}

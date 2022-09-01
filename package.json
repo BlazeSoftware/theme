@@ -1,0 +1,63 @@
+{
+  "name": "@blaze/theme",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Open Source UI Toolkit - Theme",
+  "author": "Gregory Pratt",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BlazeSoftware/theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BlazeSoftware/theme/issues"
+  },
+  "homepage": "https://theme.blazeui.com",
+  "keywords": [
+    "html",
+    "sass",
+    "scss",
+    "css",
+    "bem",
+    "itcss",
+    "bemit",
+    "ui",
+    "ux",
+    "framework",
+    "components",
+    "webcomponents",
+    "stencil",
+    "stenciljs"
+  ],
+  "scripts": {
+    "build": "stencil build --prerender",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "stylelint": "stylelint \"src/**/*.scss\" --fix"
+  },
+  "devDependencies": {
+    "@blaze/atoms": "13.0.0",
+    "@blaze/css": "12.0.0",
+    "@stencil/core": "2.17.4",
+    "@stencil/postcss": "2.1.0",
+    "@stencil/router": "1.0.1",
+    "@stencil/sass": "1.5.2",
+    "@stencil/store": "2.0.0",
+    "@types/cssnano": "5.1.0",
+    "@types/jest": "27.4.1",
+    "@types/puppeteer": "5.4.5",
+    "cssnano": "5.1.13",
+    "firebase": "9.9.3",
+    "jest": "27.5.1",
+    "jest-cli": "27.5.1",
+    "postcss": "8.4.16",
+    "puppeteer": "13.5.1",
+    "stylelint": "14.11.0",
+    "stylelint-config-rational-order": "0.1.2",
+    "stylelint-config-standard": "28.0.0",
+    "stylelint-config-standard-scss": "5.0.0",
+    "stylelint-scss": "4.3.0",
+    "workbox-build": "6.5.4"
+  }
+}

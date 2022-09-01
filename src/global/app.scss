@@ -1,0 +1,97 @@
+@import 'node_modules/@blaze/css/src/scss/blaze';
+@import 'node_modules/@blaze/css/src/scss/mixins/tools.mediaqueries';
+@import 'node_modules/@blaze/css/src/scss/mixins/utilities.visibility';
+
+:root {
+  --text-font-family-sans-serif: avenir, sans-serif;
+  --color-text: #2c3e50;
+}
+
+components-badges {
+  blaze-badge {
+    margin-right: 0.5em;
+  }
+}
+
+components-buttons {
+  .c-button {
+    margin-right: 0.5em;
+  }
+}
+
+body {
+  overflow-x: hidden;
+  font-size: 17px;
+}
+
+aside.o-drawer {
+  transition: transform 0.3s;
+}
+
+aside.o-drawer.o-drawer--left,
+aside.o-drawer.o-drawer--right {
+  width: 320px;
+}
+
+.o-demo {
+  .c-card--menu[role='menu'] {
+    position: relative;
+  }
+
+  &__component {
+    position: sticky;
+    top: var(--spacing-super);
+  }
+}
+
+.fixed-height-demo {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+  border: 1px solid #eee;
+}
+
+.modal-demo {
+  position: relative;
+  height: 550px;
+  overflow: hidden;
+  background-image: url('https://source.unsplash.com/random');
+  background-size: cover;
+}
+
+// Grid outlines
+.o-grid--demo.o-grid {
+  border: 2px solid #ff69b4;
+}
+
+.o-grid-key {
+  font-weight: bold;
+}
+
+.o-grid-key--grid {
+  color: #ff69b4;
+}
+
+.o-grid-key--grid-cell {
+  color: #00bfff;
+}
+
+.o-grid-key--padding {
+  color: #66bb6a;
+}
+
+.o-grid--demo .o-grid__cell {
+  background-color: #b2f5b5;
+  border: 2px solid #00bfff;
+}
+
+.o-grid-text {
+  background-color: #fff;
+}
+
+aside.o-drawer,
+.o-modal[role='dialog'],
+.c-overlay[aria-hidden],
+.fixed-height-demo .c-alerts {
+  position: absolute;
+}
