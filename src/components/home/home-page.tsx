@@ -1,13 +1,10 @@
-import { h, Component, State } from '@stencil/core';
+import { h, Component } from '@stencil/core';
 
 @Component({
   tag: 'home-page',
   styleUrl: 'home-page.scss',
 })
 export class LandingPage {
-  @State()
-  dark: boolean;
-
   docStyle = document.documentElement.style;
   darkVariables = {
     '--color-background': 'var(--color-0)',
@@ -23,9 +20,8 @@ export class LandingPage {
     '--divider-color': '#e717fa',
   };
 
-  async setTheme(e) {
-    this.dark = e.detail;
-    if (!this.dark) return this.resetTheme();
+  async setTheme() {
+    this.resetTheme();
     Object.keys(this.darkVariables).forEach(prop => {
       this.docStyle.setProperty(prop, this.darkVariables[prop]);
     });
@@ -46,12 +42,18 @@ export class LandingPage {
 
         <p class="o-container o-container--small u-super u-centered">Customise Blaze UI CSS variables</p>
 
-        <div class="u-letter-box-xlarge">
-          <p class="c-paragraph u-centered">
-            <span class="u-pillar-box-large u-xlarge">
-              <blaze-toggle type="brand" style={{ display: 'inline-block ' }} onToggle={e => this.setTheme(e)}>
-                {this.dark ? <span>Dark</span> : <span>Light</span>}
-              </blaze-toggle>
+        <div class="u-letter-box-xlarge u-centered">
+          <p class="c-paragraph">Try a theme</p>
+          <p class="c-paragraph">
+            <span class="u-pillar-box-xlarge">
+              <button class="c-button c-button--ghost" onClick={() => this.resetTheme()}>
+                Light
+              </button>
+            </span>
+            <span class="u-pillar-box-xlarge">
+              <button class="c-button" onClick={() => this.setTheme()}>
+                Dark
+              </button>
             </span>
           </p>
         </div>
