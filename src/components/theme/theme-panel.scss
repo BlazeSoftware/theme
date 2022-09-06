@@ -1,26 +1,27 @@
 theme-panel {
-  --color-text: #2c3e50;
-  --card-background: #fafafa;
+  // --color-text: #2c3e50;
+  // --card-background: #fafafa;
 
-  --card-control-color: white;
+  // --card-control-color: white;
   --card-control-background: linear-gradient(135deg, #1e90ff, #f0f, white);
 
-  --card-item-color: var(--color-text);
-  --card-item-background: transparent;
+  // --card-item-color: var(--color-text);
+  // --card-item-background: transparent;
 
-  --card-item-color--divider: var(--color-text);
-  --card-item-background--divider: #eaeaea;
+  // --card-item-color--divider: var(--color-text);
+  // --card-item-background--divider: #eaeaea;
 
-  --typography-code-color: var(--color-text);
-  --typography-code-background: #eaeaea;
+  // --typography-code-color: var(--color-text);
+  // --typography-code-background: #eaeaea;
 
-  --field-color: var(--color-text);
+  // --field-color: var(--color-text);
+  // --field-background: white;
 
-  --color-outline: #4267ff;
+  // --color-outline: #4267ff;
 
-  --border-radius: 4px;
+  // --border-radius: 4px;
 
-  --button-color--brand-ghost: #2c3e50;
+  // --button-color--brand-ghost: #2c3e50;
 
   display: block;
   color: var(--color-text);

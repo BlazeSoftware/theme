@@ -17,9 +17,9 @@ export class ThemePanel {
   renderForm() {
     return this.variables.map(variableGroup => {
       return [
-        <blaze-card-header>
-          <h3 class="c-heading u-gradient-text">{variableGroup.heading}</h3>
-        </blaze-card-header>,
+        <div role="separator" class="c-card__item c-card__item--divider">
+          {variableGroup.heading}
+        </div>,
         <blaze-card-body>
           <div class="o-grid o-grid--wrap">
             {variableGroup.variables.map(variable => {
@@ -71,7 +71,7 @@ export class ThemePanel {
         {this.renderForm()}
         <blaze-card-footer>
           <div class="u-right">
-            <button class="c-button c-button--ghost c-button--brand u-small" onClick={() => this.exportVariables()}>
+            <button class="c-button c-button--brand u-small" onClick={() => this.exportVariables()}>
               Download CSS <i class="fas fa-download c-icon" />
             </button>
           </div>

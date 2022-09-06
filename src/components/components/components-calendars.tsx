@@ -149,7 +149,7 @@ export class ComponentsCalendars {
           6
         </button>
         <div class="c-calendar__footer">
-          <button class="c-calendar__today c-button c-button--block c-button--brand">Today</button>
+          <button class="c-calendar__today c-button c-button--block c-button--info">Today</button>
         </div>
       </div>
     );

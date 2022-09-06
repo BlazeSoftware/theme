@@ -36,23 +36,9 @@ export class ComponentsTypography {
         </section>
 
         <section class="u-letter-box-large">
-          <h3 class="c-heading u-xlarge">Gradient text</h3>
-
-          <div class="u-super u-gradient-text">Default gradient</div>
-          <br />
-          <div class="u-super u-gradient-text u-gradient-text--info">Information</div>
-          <br />
-          <div class="u-super u-gradient-text u-gradient-text--warning">Warning</div>
-          <br />
-          <div class="u-super u-gradient-text u-gradient-text--success">Success</div>
-          <br />
-          <div class="u-super u-gradient-text u-gradient-text--error">Error</div>
-        </section>
-
-        <section class="u-letter-box-large">
           <h3 class="c-heading u-xlarge">Highlighting text</h3>
 
-          <span class="u-xlarge u-text--highlight">To highlight text simply wrap the words with the highlight class</span>
+          <span class="u-xlarge u-text--highlight">Highlight words with the highlight class</span>
         </section>
 
         <section class="u-letter-box-large">
@@ -62,7 +48,7 @@ export class ComponentsTypography {
   <body>
     <main>
       <header>
-        <h1>hello world</h1>
+        <h1>code words with the code class</h1>
       </header>
     </main>
   </body>
@@ -73,7 +59,7 @@ export class ComponentsTypography {
         <section class="u-letter-box-large">
           <h3 class="c-heading u-xlarge">Blockquote</h3>
 
-          <blockquote class="u-blockquote">
+          <blockquote class="u-blockquote u-blockquote--brand">
             <div class="u-blockquote__body">"Never tell the same lie twice."</div>
             <footer class="u-blockquote__footer">- Garak</footer>
           </blockquote>

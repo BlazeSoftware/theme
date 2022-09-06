@@ -2,11 +2,11 @@ site-header {
   .o-page-header {
     position: relative;
     padding: var(--spacing-medium) 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--border-color);
   }
 
   .o-page-logo {
-    color: var(--color-error);
+    color: #ee0202;
   }
 
   .o-page-header__button {

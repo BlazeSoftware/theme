@@ -4,7 +4,8 @@
 
 :root {
   --text-font-family-sans-serif: avenir, sans-serif;
-  --color-text: #2c3e50;
+  --tooltip-color: var(--color-text-inverse);
+  --tooltip-background: var(--color-text);
 }
 
 components-badges {

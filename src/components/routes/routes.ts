@@ -15,11 +15,6 @@ export const componentsRoutes: Route[] = [
     variables: variables.ALERTS,
   },
   {
-    anchor: 'components-autocomplete',
-    component: 'components-autocomplete',
-    name: 'Autocomplete',
-  },
-  {
     anchor: 'components-avatars',
     component: 'components-avatars',
     name: 'Avatars',
@@ -56,6 +51,11 @@ export const componentsRoutes: Route[] = [
     variables: variables.MENUS,
   },
   {
+    anchor: 'components-autocomplete',
+    component: 'components-autocomplete',
+    name: 'Autocomplete',
+  },
+  {
     anchor: 'objects-modals',
     component: 'objects-modals',
     name: 'Modals',
@@ -77,6 +77,7 @@ export const componentsRoutes: Route[] = [
     anchor: 'components-inputs',
     component: 'components-inputs',
     name: 'Inputs',
+    variables: variables.INPUTS
   },
   {
     anchor: 'components-pagination',
@@ -88,31 +89,37 @@ export const componentsRoutes: Route[] = [
     anchor: 'components-progress',
     component: 'components-progress',
     name: 'Progress',
+    variables: variables.PROGRESS
   },
   {
     anchor: 'components-ranges',
     component: 'components-ranges',
     name: 'Ranges',
+    variables: variables.RANGES
   },
   {
     anchor: 'components-tables',
     component: 'components-tables',
     name: 'Tables',
+    variables: variables.TABLES
   },
   {
     anchor: 'components-tabs',
     component: 'components-tabs',
     name: 'Tabs',
+    variables: variables.TABS
   },
   {
     anchor: 'components-timelines',
     component: 'components-timelines',
     name: 'Timelines',
+    variables: variables.TIMELINES
   },
   {
     anchor: 'components-toggles',
     component: 'components-toggles',
     name: 'Toggles',
+    variables: variables.TOGGLES
   },
   {
     anchor: 'components-tooltips',
@@ -130,6 +137,7 @@ export const componentsRoutes: Route[] = [
     anchor: 'components-typography',
     component: 'components-typography',
     name: 'Typography',
+    variables: variables.TYPOGRAPHY
   },
 ];
 
