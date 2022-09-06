@@ -50,7 +50,7 @@ export class LandingPage {
           <p class="c-paragraph u-centered">
             <span class="u-pillar-box-large u-xlarge">
               <blaze-toggle type="brand" style={{ display: 'inline-block ' }} onToggle={e => this.setTheme(e)}>
-                <i class="fas fa-adjust" />
+                {this.dark ? <span>Dark</span> : <span>Light</span>}
               </blaze-toggle>
             </span>
           </p>
