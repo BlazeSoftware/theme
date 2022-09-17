@@ -25,8 +25,8 @@ export class ThemeInput {
 
   render() {
     return (
-      <div class="o-field o-field--icon-right u-letter-box-small">
-        <input class="c-field u-text--mono" value={this.newValue} onInput={e => this.handleChange(e)} spellcheck={false} />
+      <div class="c-color-picker o-field o-field--icon-right u-letter-box-small">
+        <input class="c-color-picker__value c-field u-text--mono" value={this.newValue} onInput={e => this.handleChange(e)} spellcheck={false} />
         {this.type === 'color' && [
           <i class="fas fa-palette c-icon" />,
           <input class="c-color-picker__input" type="color" value={this.newValue} onInput={e => this.handleChange(e)} spellcheck={false} />,
