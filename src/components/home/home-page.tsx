@@ -29,13 +29,13 @@ export class LandingPage {
         <div class="u-letter-box-xlarge u-centered">
           <p class="c-paragraph">Try a theme</p>
           <p class="c-paragraph">
-            <span class="u-pillar-box-xlarge">
-              <button class="c-button c-button--ghost" onClick={() => this.removeThemes()}>
+            <span class="u-pillar-box-medium">
+              <button class="u-pillar-box-large c-button c-button--ghost" onClick={() => this.removeThemes()}>
                 Light
               </button>
             </span>
-            <span class="u-pillar-box-xlarge">
-              <button class="c-button" onClick={() => this.setTheme(THEMES.DARK)}>
+            <span class="u-pillar-box-medium">
+              <button class="u-pillar-box-large c-button" onClick={() => this.setTheme(THEMES.DARK)}>
                 Dark
               </button>
             </span>
